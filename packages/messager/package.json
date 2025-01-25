@@ -2,12 +2,12 @@
   "name": "@bmos/messager",
   "version": "0.0.0",
   "description": "messager",
+  "author": "li lei",
+  "license": "MIT",
   "keywords": [
     "message",
     "navigate"
   ],
-  "license": "MIT",
-  "author": "Ansel",
   "exports": {
     ".": {
       "require": "./src/index.ts",
@@ -18,8 +18,8 @@
   "module": "./src/index.ts",
   "types": "",
   "files": [
-    "dist",
-    "README.md"
+    "README.md",
+    "dist"
   ],
   "scripts": {
     "build": "vite build",
