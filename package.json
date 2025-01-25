@@ -19,7 +19,7 @@
     "build:packages": "pnpm --filter ./packages/** run build",
     "build:platform": "pnpm --filter bmos-platform-web build",
     "build:wms": "pnpm --filter bmos-wms-web build",
-    "dev": "pnpm --filter ./apps/** run dev",
+    "dev": "pnpm --filter playground run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "open": "pnpm --filter @bmos/open start",
