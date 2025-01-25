@@ -1,7 +1,8 @@
 // eslint.config.mjs
 import antfu from '@antfu/eslint-config'
 
-export default antfu({
+/** @type {import('@antfu/eslint-config').Config} */
+const config = antfu({
   vue: true,
   stylistic: {
     semi: false,
@@ -29,6 +30,9 @@ export default antfu({
       varsIgnorePattern: '^_',
       ignoreRestSiblings: true,
     }],
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
   },
 
   typescript: {
@@ -64,3 +68,5 @@ export default antfu({
     },
   },
 })
+
+export default config

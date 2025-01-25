@@ -1,4 +1,4 @@
-//指定 IDE 配置，这些配置只会在本项目中生效
+// 指定 IDE 配置，这些配置只会在本项目中生效
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "css.validate": false,
@@ -7,8 +7,6 @@
   // 指定 stylelint 生效的文件类型(尤其是 vue 文件)。
   "stylelint.validate": ["css", "less", "postcss", "vue", "scss"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // 启用自动代码修复功能，保存时触发 eslint 和 stylelint 的自动修复。
-  "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   // 启用 eslint 的格式化能力
   "eslint.format.enable": true,
@@ -23,11 +21,6 @@
   // volar 可以处理 vue 文件的格式化
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // 自动代码修复功能，保存时触发 eslint 和 stylelint 的自动修复（默认关闭）。
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "never"
   },
   // json、yaml 等配置文件保存时自动格式化
   "[json]": {
@@ -48,6 +41,54 @@
   // 自动补充闭合的 HTML 标签
   "html.autoClosingTags": true,
   "nuxt.isNuxtApp": false,
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "svelte",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
+  ],
   "cSpell.words": [
     "actived",
     "alldata",
