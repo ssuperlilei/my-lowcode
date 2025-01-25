@@ -151,6 +151,3 @@ export default {
 //   init({
 //     lng: 'zh-CN',
 //   });
-//   console.log(t('key'));
-//   changeLanguage('en');
-//   console.log(t('key'));

@@ -1,12 +1,12 @@
 {
-  "name": "demo",
+  "name": "playground",
   "type": "module",
   "version": "0.0.0",
-  "description": "demo",
+  "description": "playground",
   "author": "li lei",
   "license": "MIT",
   "keywords": [
-    "demo"
+    "playground"
   ],
   "main": "",
   "module": "",
@@ -27,7 +27,9 @@
     "@bmos/components": "workspace:^",
     "@bmos/i18n": "workspace:^",
     "@bmos/utils": "workspace:^",
-    "ant-design-vue": "^4.2.5"
+    "ant-design-vue": "^4.2.5",
+    "pinia": "^2.3.1",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
