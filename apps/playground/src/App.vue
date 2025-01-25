@@ -1,5 +1,9 @@
 <template>
   <BMConfigProvider prefix-cls="playground">
-    <router-view />
+    1212
   </BMConfigProvider>
 </template>
+
+<script setup lang="ts">
+import { BMConfigProvider } from '@bmos/components'
+</script>
