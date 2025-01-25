@@ -10,9 +10,10 @@ const config = antfu({
     quotes: 'single',
   },
   rules: {
-    'vue/block-order': ['error', {
-      order: ['template', 'script', 'style'],
-    }],
+    'vue/block-order': ['error', { order: ['template', 'script', 'style'] }],
+    'antfu/top-level-function': 'off',
+    'vue/jsx-uses-vars': 'error',
+    'no-unused-vars': ['error', { varsIgnorePattern: '_', argsIgnorePattern: '_', caughtErrorsIgnorePattern: '_' }],
     'vue/no-empty-pattern': 'off',
     'vue/brace-style': ['error', '1tbs'],
     'style/brace-style': ['error', '1tbs'],
@@ -20,7 +21,6 @@ const config = antfu({
       varsIgnorePattern: '^_', // ignore unused imports
       argsIgnorePattern: '^_', // ignore unused function arguments
     }],
-    'antfu/top-level-function': 'off',
     'unused-imports/no-unused-vars': ['error', {
       args: 'all',
       argsIgnorePattern: '^_',
@@ -35,6 +35,8 @@ const config = antfu({
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
+    'vue/script-indent': ['warn', 2, { baseIndent: 1 }],
+    'no-console': 'off',
   },
 
   typescript: {

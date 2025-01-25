@@ -20,7 +20,7 @@
   "eslint.workingDirectories": [{ "mode": "auto" }],
   // volar 可以处理 vue 文件的格式化
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "Vue.volar"
   },
   // json、yaml 等配置文件保存时自动格式化
   "[json]": {
