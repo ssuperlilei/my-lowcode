@@ -142,7 +142,7 @@
   },
   "cSpell.userWords": ["bmos"],
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "i18n-ally.localesPaths": "packages/i18n/src/locales",
   "i18n-ally.sourceLanguage": "zh_CN",
